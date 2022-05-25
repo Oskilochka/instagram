@@ -1,10 +1,14 @@
 import React from "react";
+import Navbar from "../components/library/Navbar/Navbar";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      Instagram
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+      </div>
+    </BrowserRouter>
   );
 }
 
