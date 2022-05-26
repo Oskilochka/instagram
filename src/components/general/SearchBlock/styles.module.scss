@@ -1,0 +1,16 @@
+.root {
+
+
+  & > input {
+    background-color: #EFEFEF;
+    color: #8e8e8e;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 8px 16px;
+    display: flex;
+    border-radius: 8px;
+    outline: none;
+    border: none
+  }
+}
+

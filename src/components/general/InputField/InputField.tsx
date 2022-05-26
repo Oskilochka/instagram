@@ -1,3 +1,4 @@
+import classnames from "classnames";
 import React from "react";
 import styles from "./styles.module.scss";
 
@@ -11,6 +12,7 @@ export type TextFieldProps = {
   hasError?: boolean,
   errorText?: string,
   label?: string,
+  className?: string
 }
 
 export const InputField = React.memo<TextFieldProps>((
@@ -24,9 +26,10 @@ export const InputField = React.memo<TextFieldProps>((
     id,
     disabled,
     placeholder,
+    className
   }) => {
   return (
-    <div className={styles.root}>
+    <div className={classnames(styles.root, className)}>
       {label?.length && <p>{label}</p>}
       <input
         id={id}
