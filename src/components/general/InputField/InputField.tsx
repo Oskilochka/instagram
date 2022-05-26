@@ -1,12 +1,13 @@
 import React from "react";
+import styles from "./styles.module.scss";
 
-export type TextFieldProps =  {
+export type TextFieldProps = {
   id?: string,
   value?: string | number | undefined,
   type?: string,
   disabled?: boolean,
   placeholder?: string,
-  onChange?: () => void,
+  onChange?: (value: any) => void,
   hasError?: boolean,
   errorText?: string,
   label?: string,
@@ -22,20 +23,20 @@ export const InputField = React.memo<TextFieldProps>((
     type,
     id,
     disabled,
-    placeholder
+    placeholder,
   }) => {
   return (
-    <div>
-      <p>{label}</p>
+    <div className={styles.root}>
+      {label?.length && <p>{label}</p>}
       <input
         id={id}
         type={type}
         value={value}
         disabled={disabled}
         placeholder={placeholder}
-        onChange={(e) => alert(e.target.value)}
+        onChange={(e) => onChange?.(e.target.value)}
       />
-      <p>errors/warnings</p>
+      {hasError && <p>{errorText}</p>}
     </div>
   );
 });
