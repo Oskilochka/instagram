@@ -1,0 +1,52 @@
+.divideBlock {
+  display: flex;
+}
+
+.block {
+  background-color: var(--white);
+  border: var(--border-primary);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fieldsWrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.divideBlock {
+  display: flex;
+  width: 100%;
+}
+
+.divideBlock > hr {
+  flex-shrink: 2;
+  width: 80%;
+  height: 1px;
+  background: var(--border-color);
+  border: none;
+}
+
+.divideTitle {
+  text-transform: uppercase;
+  color: var(--font-secondary-color);
+  font-size: 13px;
+  margin: 0 18px;
+}
+
+.imgWrap {
+  margin: 36px 0 12px 0;
+  height: 50px;
+}
+
+.imgWrap  > img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
