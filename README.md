@@ -1,4 +1,4 @@
-# hey
+# Social Network aka Instagram
 
 This project is a simple clone of instagram was made for fun by **oskilochka**
 
