@@ -9,35 +9,36 @@ body {
 }
 
 :root {
+    /* Common colors */
+    --white: #fff;
+    --black: #000;
+    --error-color: #ed4956;
+    --bg-main-color: #EFEFEF;
+    --header-color: #fff;
+    --input-bg-color: #fafafa;
+
+    /* Buttons */
     --button-primary-color: #0095f6;
     --button-disabled-color: rgba(var(--button-primary-color), 0.3);
 
+    /* Font */
     --font-primary-color: #262626;
     --font-secondary-color: #8e8e8e;
 
-    --error-color: #ed4956;
-
-    --bg-main-color: #EFEFEF;
-    --header-color: #fff;
-
+    /* Border */
     --border-color: #dbdbdb;
-    --input-bg-color: #fafafa;
-
-    --white: #fff;
-    --black: #000;
-
+    --border-focus-color: #a8a8a8;
     --border-primary: 1px solid var(--border-color);
 
     --border-radius-xs: 1px;
     --border-radius-s: 3px;
     --border-radius-m: 5px;
 
+    /* Spacing */
     --spacing-xs: 5px;
     --spacing-s: 10px;
     --spacing-m: 15px;
     --spacing-l: 20px;
-
-    /*#00376b*/
 }
 
 

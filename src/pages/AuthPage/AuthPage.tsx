@@ -1,7 +1,6 @@
-import classnames from "classnames";
 import React from "react";
-import styles from "./styles.module.scss";
 import { LoginBlock } from "./components";
+import styles from './styles.module.scss'
 
 export type TextFieldProps = {
   className?: string
@@ -9,11 +8,11 @@ export type TextFieldProps = {
 
 export const AuthPage = React.memo<TextFieldProps>((
   {
-    className
+    className,
   }) => {
   return (
-    <div>
-     <LoginBlock />
+    <div className={styles.wrap}>
+      <LoginBlock />
     </div>
   );
 });

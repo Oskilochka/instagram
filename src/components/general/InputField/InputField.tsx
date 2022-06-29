@@ -2,7 +2,7 @@ import classnames from "classnames";
 import React from "react";
 import styles from "./styles.module.scss";
 
-export type TextFieldProps = {
+export type InputFieldProps = {
   id?: string,
   value?: string | number | undefined,
   type?: string,
@@ -15,7 +15,7 @@ export type TextFieldProps = {
   className?: string
 }
 
-export const InputField = React.memo<TextFieldProps>((
+export const InputField = React.memo<InputFieldProps>((
   {
     value,
     onChange,
@@ -29,9 +29,9 @@ export const InputField = React.memo<TextFieldProps>((
     className
   }) => {
   return (
-    <div className={classnames(styles.root, className)}>
+    <>
       {label?.length && <p>{label}</p>}
-      <input
+      <input className={classnames(styles.root, className)}
         id={id}
         type={type}
         value={value}
@@ -40,7 +40,7 @@ export const InputField = React.memo<TextFieldProps>((
         onChange={(e) => onChange?.(e.target.value)}
       />
       {hasError && <p>{errorText}</p>}
-    </div>
+    </>
   );
 });
 

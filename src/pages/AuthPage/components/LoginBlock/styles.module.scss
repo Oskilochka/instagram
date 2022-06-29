@@ -10,6 +10,9 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  padding: 20px 50px;
+
 }
 
 .fieldsWrap {
@@ -17,7 +20,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
 }
 
 .divideBlock {
@@ -49,4 +51,8 @@
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
+}
+
+.field {
+  margin: 0 40px 6px;
 }
