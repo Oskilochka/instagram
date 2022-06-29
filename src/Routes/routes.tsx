@@ -6,6 +6,9 @@ export const routes = {
     profile_tagged: '/profile/tagged',
     profile_videos: '/profile/channel',
     direct: '/direct',
-    explore: '/explore'
-
+    explore: '/explore',
+    login: 'login',
+    page400: '400',
+    page403: '403',
+    page404: '404',
 }

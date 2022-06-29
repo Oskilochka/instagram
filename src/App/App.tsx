@@ -29,6 +29,26 @@ function App() {
             </Route>
             <Route path={routes.direct} element={<>direct</>}/>
             <Route path={routes.explore} element={<>explore</>}/>
+            {/*// /!* Authorization *!/*/}
+            {/*// <Route path={navigationLinks.login} element={<AuthPage />} />*/}
+            {/*//*/}
+            {/*// /!* Main content *!/*/}
+            {/*// <Route path="/" element={<>*/}
+            {/*//   <Navbar />*/}
+            {/*//   Content*/}
+            {/*// </> }>*/}
+            {/*// </Route>*/}
+            {/*//*/}
+            {/*// /!* Additional Pages *!/*/}
+            {/*//*/}
+            {/*// /!* Unathorized*!/*/}
+            {/*// <Route path={navigationLinks.page400} element={<>401 Not found </>} />*/}
+            {/*// /!* Access Forbidden *!/*/}
+            {/*// <Route path={navigationLinks.page403} element={<>403 Not found </>} />*/}
+            {/*// <Route path={navigationLinks.page404} element={<>404 Not found </>} />*/}
+            {/*// /!*<Navigate to={"404"} replace={true} />*!/*/}
+            {/*//*/}
+            {/*// <Route path="/*" element={ <Navigate to={navigationLinks.page404} replace /> } />*/}
           </Routes>
         </div>
         </ThemeContextProvider>

@@ -1,7 +1,7 @@
 import React from "react";
-import InstaLogo from "./icons/logo.png";
 import { NavbarMenu } from "./component";
 import { SearchBlock } from "../../general";
+import InstaLogo from "./icons/logo.png";
 import styles from "./styles.module.scss";
 
 export type NavbarProps = {}

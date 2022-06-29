@@ -1,3 +1,6 @@
-.main {
+.app {
+    font-size: 16px;
+    color: var(--font-primary-color);
     background: #FAFAFA;
+    min-height: 100vh;
 }
